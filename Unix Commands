@@ -1,0 +1,3 @@
+Unix Commands
+
+rm -rf ./* -> rm = remove (delete) -f = regardless of file permissions -r = recurrsively for all folders
