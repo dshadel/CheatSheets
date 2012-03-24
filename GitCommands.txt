@@ -1,0 +1,45 @@
+Git Commands
+
+To Set User Name and Email globally:
+git config --global user.name "Derrick Shadel"
+git config --global user.email "dshadel@gmail.com"
+
+To Set User Name and Email for a specific repo
+cd the_repo
+git config user.name "Derrick Shadel"
+git config user.email "derrick.shadel@domo.com"
+
+To set the GitHub user name and token
+git config --global github.user "dshadel"
+git config --global github.token "fac6eeae97154e78d56889d1e25a1cdb"
+
+To set up a repository in GitHub
+1. Login to GitHub and go to your account (click on your user name)
+2. Click the "New repository" button and enter information (this info for YABE repository)
+3. Setup git username and email per instructions above
+4. On your computer: (if new repository)
+   a. mkdir YABE
+   b. cd YABE
+   c. git init
+   d. touch README
+   e. git add README
+   f. git commit -m 'first commit'
+   g. git remote add origin git@github.com:dshadel/YABE.git
+   h. git push -u origin master
+5. On your computer: (if existing Git Repo)
+   a. cd existing_git_repo
+   b. git remote add origin git@github.com:dshadel/YABE.git
+   c. git push -u origin master
+
+Basic Commands:
+git status -> shows what files have been changed
+git stash -> saves your changes temporarily
+git pull --rebase -> gets the latest version of code
+git stash pop -> restores your changes on top of latest code (from pull)
+git add -> adds a file to be committed to local repository
+git commit -a -> commits changes to local repository
+git push -> pushs the locally commited files to the main repository
+
+For more Info
+http://git-scm.com/documentation
+

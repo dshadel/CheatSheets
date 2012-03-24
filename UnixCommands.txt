@@ -1,0 +1,70 @@
+Unix Commands
+
+cd <folder>
+	cd = change directory
+	<folder> = folder to navigate to (use tab to complete)
+rm -rf ./*
+	rm = remove (delete) 
+	-f = regardless of file permissions 
+	-r = recurrsively for all folders
+cp <source> <dest>
+	cp = copy
+	<source> = file or directory
+	<dest> = folder or file (to rename as you are copying)
+mv <source> <dest>
+	mv = move
+	<source> = file or directory
+	<dest> = folder or file (to rename as you are moving)
+ls -la -sh
+	ls = list files
+	-l = list all the info about the files
+	-a = list all files including hidden ones
+	-s = list size in human readable format (K,M,G)
+tail -n 100 -f <filename>
+	tail = show end of file 
+	-f = show new lines added to file in real time
+	-n = number of existing lines to display initially
+cat <filename>
+	cat = concatinate (file to screen??) will display the contents
+	<filename> = the name of the file
+ssh -i <.pem file> <username>@<server>
+	ssh = secure shell
+	-i = identy file
+	<username> = user on the server you are accessing
+	<server> = ip address or dns name for server
+scp -i <.pem file> <source> <dest>
+	scp = secure copy
+	-i = identy file
+	<source> = source folder or file
+	<dest> destination folder or file (to rename as you copy)
+	NOTE: source or dest has <username>@<server>:<folder/file> (colon is IMPORTANT)
+		The <folder/file> starts in the home directory of the user specified.
+ps -ef | grep <process name>
+	ps = list the processes running on this computer
+	-e = 
+	-f = 
+	| = pipe output from one command as input to another command
+	grep = search using regex
+	<process name> = name of the process (like java)
+grep <regex> <filename>
+	grep = search using regex
+	<regex> = subset of regex used by Perl
+	<filename> = file to search
+tar -czvf <name>.tar.gz <list of files or folders>
+	tar = create compressed archive
+	-c = 
+	-z = use gzip compression
+	-v =
+	-f =
+	<name> = name of archive file, the .tar.gz tells format
+	<list of files or folders> = a list of space separated files or folders
+		put "" around file with spaces in the name
+sudo service <service name> start|stop|restart
+	service = acts upon a service
+	<service name> such as tomcat6, mysql, postres, etc.
+	start|stop|restart = three commands that can be sent to the service
+df
+	df = show disk information
+sudo <command>
+	sudo = perform (do) with super user privilges (su)
+	<command> any command with parameters etc.

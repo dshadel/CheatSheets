@@ -1,5 +1,5 @@
 Mac Setup
 
 Show all files (hidden ones): At the terminal type:
-defaults write com.apple.Finder AppleShowAllFiles
+defaults write com.apple.Finder AppleShowAllFiles YES
 

@@ -1,0 +1,16 @@
+vi commands
+
+at command prompt:
+vi <filename>
+
+hjkl = right up down left
+x = delete one char
+i = go into insert mode
+esc = get out of insert mode
+G = go to end of file
+1G = go to line 1 of the file
+cw = change word -> delete the current word and put editor in insert mode
+. = do the last command again
+: = go into command mode
+:wq = go into command mode, write the file, quit vi
+:q! = quit without saving
